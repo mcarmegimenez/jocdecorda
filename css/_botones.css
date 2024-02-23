@@ -1,0 +1,118 @@
+/* uiButton es cualquier botón perteneciente a la navegación del interactivo */
+.uiButton {
+	background: #999; /* Old browsers */
+	font-family: 'SourceSansProBold';
+	color: white;
+	min-width: 90px;
+	position: absolute;
+	padding: 5px;
+	margin: 0px;
+	height:22px;
+	cursor: pointer;
+	border-radius:8px;
+	text-align:center;
+	right:20px;
+	bottom:20px;
+	text-decoration:none;
+	line-height:22px;
+	z-index:10000;
+	display:block;
+}
+
+.uiButton br { /* interlineado texto simplebuttons */
+	line-height: 20px;
+}
+
+.uiButton:hover, .uiButton:active, .arrowLeft:hover, .arrowLeft:active, .arrowRight:hover, .arrowRight:active {
+	background: black;
+	color:white;
+	text-decoration:none;
+}
+
+/* genericButton es cualquier botón perteneciente al interactivo en concreto */
+button.genericButton {
+	-webkit-box-sizing: content-box;
+	  -moz-box-sizing: content-box;
+		   box-sizing: content-box;
+	border: 0;
+	font-size: initial;
+
+-webkit-user-select: none; /* for button */
+   -moz-user-select: none;
+	-ms-user-select: none;
+}
+.genericButton {
+	background: #b1a9d4;
+	font-family: 'SourceSansProBold';
+	color: white;
+	min-width: 100px;
+	position: absolute;
+	padding: 5px;
+	margin: 0px;
+	height:22px;
+	cursor: pointer;
+	border-radius:8px;
+	text-align:center;
+	text-decoration:none;
+	line-height:22px;
+	display:block;
+}
+
+.genericButton br { /* interlineado texto simplebuttons */
+	line-height: 20px;
+}
+
+.genericButton:hover, .genericButton:active {
+	background: #6859a2;
+	color:white;
+	text-decoration:none;
+}
+
+.tInac, .tInac:hover, .tInac:active{
+	background-color:#D7D7D7;
+	color:#B7B7B7;
+	cursor:default;
+}
+
+
+
+
+/* specialButton */
+.specialButtonContainer{
+	position:absolute;
+	top:20px;
+	right:7px;
+}
+
+.specialButton {
+	background: #b1a9d4;
+	font: 28px 'smsymbolregular';
+	color: white;
+	width: 38px;
+	height:38px;
+	border-radius:38px;
+	cursor: pointer;
+	text-align:center;
+	line-height:38px;
+	text-decoration:none;
+	margin-bottom:7px;
+	display:block;
+}
+
+.specialButton:hover, .specialButton:active {
+	background: #6859a2;
+	color:white;
+	text-decoration:none;
+}
+
+.specialButton.cerrar:after{content:"w"; }
+.specialButton.cerrar{line-height: 32px;}
+.specialButton.ayuda:after{content:"o"}
+.specialButton.ampliar:after{content:"s"}
+.specialButton.pant_completa:after{content:"n"}
+.specialButton.imagen:after{content:"q"}
+.specialButton.documento:after{content:"l"}
+.specialButton.enlace:after{content:"m"}
+.specialButton.play:after{content:"c"}
+.specialButton.pause:after{content:"p"}
+.specialButton.audio:after{content:"h"}

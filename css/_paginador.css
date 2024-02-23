@@ -1,0 +1,69 @@
+/* barras de navegación */
+.toolbar {
+	position: absolute;
+	bottom: 48px;
+	height: 0px;
+	width: 100%;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	z-index:9999;
+}
+.arrowLeft {
+	height: 38px;
+	width: 38px;
+	background-color:#999;
+	display:inline-block;
+	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
+	text-align: center;
+	font: 20px 'smsymbolregular', Arial, sans-serif;
+	color: white;
+	line-height: 36px;
+	position:absolute;
+	left:0px;
+	margin:0;
+	text-decoration:none;
+	cursor:pointer;
+}
+.arrowLeft:after{content:"b"}
+.counter {
+	height: 38px;
+	width: 80px;
+	background-color:#999;
+	display:inline-block;
+	text-align: center;
+	font-family: 'SourceSansProBold', Arial, sans-serif;
+	color: white;
+	line-height: 40px;
+	position:absolute;
+	left:41px;
+	margin:0;
+}
+.arrowRight {
+	height: 38px;
+	width: 38px;
+	background-color:#999;
+	display:inline-block;
+	border-bottom-right-radius: 8px;
+	border-top-right-radius: 8px;
+	text-align: center;
+	font: 20px 'smsymbolregular', Arial, sans-serif;
+	color: white;
+	line-height: 36px;
+	position:absolute;
+	left:124px;
+	margin:0;
+	text-decoration:none;
+	cursor:pointer;
+}
+.arrowRight:after{content:"c"}
+.tcont {
+	display:inline-block;
+	position:relative;
+	height:38px;
+	min-width:162px;
+	top:-4px;
+}
+
+/* END barras de navegación */

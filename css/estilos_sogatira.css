@@ -1,0 +1,136 @@
+.state-final #btn-repetir {
+    display: block;
+}
+.state-esperando #btn-continuar {
+    display: block;
+}
+.state-final #ejemplo, .state-jugando #ejemplo {
+    display: none
+}
+.state-inicio #ejemplo #btn-ejemplo {
+    display: block;
+}
+#btn-repetir {
+    display: none;
+}
+.popup-wrapper {
+    font-size: 0.7em;
+    padding: 30px !important;
+}
+
+.col {
+    height: inherit;
+}
+.state-final label {
+    display: none;
+}
+.col .row {
+    overflow: visible;
+}
+
+.cajaTexto {
+    width: 75%;
+    padding: 10px;
+    margin: 0 auto;
+	border-radius: 5px;
+}
+
+.row-tabla {
+    height: inherit;
+}
+.arriba .fondo {
+    background-position: bottom center;
+    background-repeat: repeat-x;
+	background-image: url(../data/imgs/soga.png);
+	padding: 0;
+}
+
+#imagenes {
+	padding: 5px 5px 30px;
+}
+
+#contenedor_ppal .inputs {
+	vertical-align: middle;
+	text-align: center;
+}
+
+
+
+/*********************/
+
+.draggable{
+	position: absolute;
+}
+
+.arriba {
+	margin-top: 10px;
+	
+}
+.arriba .tirar {
+	vertical-align: bottom;
+	padding: 0;
+}
+
+.arriba .fondo {
+	position: relative;
+}
+
+#mover {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.abajo {
+	margin-top: 15px;
+	overflow: visible;
+}
+
+.equipo{
+	position: relative;
+}
+
+.numeros {
+	font-weight: 700;
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+}
+
+.segundo .marco {
+	overflow: hidden;
+	position: relative;
+	padding: 0;
+	height: 40px;
+	margin: 3px 0;
+}
+
+.flecha {
+	position: absolute;
+	top: 0;
+}
+
+#flechaAzul, #finAzul{
+	right: -220px; 
+}
+
+#flechaRoja, #finRoja{
+	left: -220px; 
+}
+
+.resultadoAzul {
+	text-align: right;
+	padding-right: 40px;
+}
+
+.resultadoAzul {
+	padding-left: 40px;
+}
+
+.fin {
+	text-align: center;
+}
+
+@media (max-width: 700px) {
+
+}

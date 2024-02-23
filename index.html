@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<title>Juga a estirar la corda</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="css/_reset.css" rel="stylesheet" type="text/css">
+	<link href="css/fonts/fonts.css" rel="stylesheet" type="text/css">
+	<link href="css/_botones.css" rel="stylesheet" type="text/css">
+	<link href="css/_popup.css" rel="stylesheet" type="text/css">
+	<link href="css/_estilos_generales.css" rel="stylesheet" type="text/css">
+	<link href="css/ig-keypad.css" rel="stylesheet" type="text/css">
+	<link href="css/estilos_sogatira.css" rel="stylesheet" type="text/css">
+
+	<script src="js/libs/jquery-2.0.3.min.js"></script>
+	<script src="js/libs/jquery-ui.min.js"></script>
+	<script src="js/libs/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/libs/l10n.min.js"></script>
+	<script src="js/libs/ig-keypad.js"></script>
+	<script src="js/rescaling.js"></script>
+	<script src="data/texts/textos.js"></script>
+	<script src="js/popup.js"></script>
+	<script src="js/sogatira.js"></script>
+
+</head>
+
+<body>
+	<div class="contenedor_interactivo">
+		
+		<div class="popup-wrapper">
+			<div id="instrucciones" class="popup">
+				<a href="#" class="cerrar-popup-btn specialButton cerrar"></a>
+				<div class="row">
+					<div class="col col-100 contenido" data-l10n="%instrucciones"></div>
+				</div>
+			</div>
+		</div>
+		
+
+
+		<div id="cabecera" class="logo">
+			<div id="enunciado" data-l10n="%enunciado"></div>
+		</div>
+
+		<div id="contenedor_ppal" class="row">
+			<div class="row arriba">
+				<div class="col col-100 fondo">
+					<div id="mover">
+						<div class="col col-10 tirar droppable" data-color="A"></div>
+						<div class="col col-10 tirar droppable" data-color="A"></div>
+						<div class="col col-10 tirar droppable" data-color="A"></div>
+						<div class="col col-10 tirar droppable" data-color="A"></div>
+						<div class="col col-20 tirar lazo"><img src="data/imgs/lazo.png" class="responsive"></div>
+						<div class="col col-10 tirar droppable" data-color="R"></div>
+						<div class="col col-10 tirar droppable" data-color="R"></div>
+						<div class="col col-10 tirar droppable" data-color="R"></div>
+						<div class="col col-10 tirar droppable" data-color="R"></div>
+					</div>					
+				</div>
+			</div>
+			<div class="row abajo primero">
+				<div class="col col-30">
+					<div class="col col-33 equipo">
+						<div class="draggable" data-color="A" data-cual="chica_azul" data-valor="300"><img src="data/imgs/chica_azul.png" class="responsive"></div>
+						<div class="draggable" data-color="A" data-cual="chica_azul" data-valor="300"><img src="data/imgs/chica_azul.png" class="responsive"></div>
+						<div class="draggable" data-color="A" data-cual="chica_azul" data-valor="300"><img src="data/imgs/chica_azul.png" class="responsive"></div>
+						<div class="draggable" data-color="A" data-cual="chica_azul" data-valor="300"><img src="data/imgs/chica_azul.png" class="responsive"></div>
+					</div>
+					<div class="col col-33 equipo">
+						<div class="draggable" data-color="A" data-cual="hombre_azul" data-valor="600"><img src="data/imgs/hombre_azul.png" class="responsive"></div>
+						<div class="draggable" data-color="A" data-cual="hombre_azul" data-valor="600"><img src="data/imgs/hombre_azul.png" class="responsive"></div>
+					</div>
+					<div class="col col-33 equipo">
+						<div class="draggable" data-color="A" data-cual="mujer_azul" data-valor="450"><img src="data/imgs/mujer_azul.png" class="responsive"></div>
+						<div class="draggable" data-color="A" data-cual="mujer_azul" data-valor="450"><img src="data/imgs/mujer_azul.png" class="responsive"></div>
+						<div class="draggable" data-color="A" data-cual="mujer_azul" data-valor="450"><img src="data/imgs/mujer_azul.png" class="responsive"></div>
+						<div class="draggable" data-color="A" data-cual="mujer_azul" data-valor="450"><img src="data/imgs/mujer_azul.png" class="responsive"></div>
+					</div>	
+				</div>
+				<div class="col col-40">
+					<div class="cajaTexto" data-l10n="%inicio"></div>
+				</div>
+				<div class="col col-30">
+					<div class="col col-33 equipo">
+						<div class="draggable" data-color="R" data-cual="chica_rojo" data-valor="300"><img src="data/imgs/chica_rojo.png" class="responsive"></div>
+						<div class="draggable" data-color="R" data-cual="chica_rojo" data-valor="300"><img src="data/imgs/chica_rojo.png" class="responsive"></div>
+						<div class="draggable" data-color="R" data-cual="chica_rojo" data-valor="300"><img src="data/imgs/chica_rojo.png" class="responsive"></div>
+						<div class="draggable" data-color="R" data-cual="chica_rojo" data-valor="300"><img src="data/imgs/chica_rojo.png" class="responsive"></div>
+					</div>
+					<div class="col col-33 equipo">
+						<div class="draggable" data-color="R" data-cual="hombre_rojo" data-valor="650"><img src="data/imgs/hombre_rojo.png" class="responsive"></div>
+						<div class="draggable" data-color="R" data-cual="hombre_rojo" data-valor="650"><img src="data/imgs/hombre_rojo.png" class="responsive"></div>
+					</div>
+					<div class="col col-33 equipo">
+						<div class="draggable" data-color="R" data-cual="mujer_rojo" data-valor="400"><img src="data/imgs/mujer_rojo.png" class="responsive"></div>
+						<div class="draggable" data-color="R" data-cual="mujer_rojo" data-valor="400"><img src="data/imgs/mujer_rojo.png" class="responsive"></div>
+						<div class="draggable" data-color="R" data-cual="mujer_rojo" data-valor="400"><img src="data/imgs/mujer_rojo.png" class="responsive"></div>
+						<div class="draggable" data-color="R" data-cual="mujer_rojo" data-valor="400"><img src="data/imgs/mujer_rojo.png" class="responsive"></div>
+					</div>	
+				</div>
+			</div>
+			<div class="row abajo segundo">
+				<div class="row">
+					<div class="col col-100">
+						<div class="cajaTexto" data-l10n="%inicio"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-50 marco">
+						<img src="data/imgs/flechaAzul.png" class="flecha" id="flechaAzul">
+					</div>
+					<div class="col col-50 marco">
+						<img src="data/imgs/flechaRoja.png" class="flecha" id="flechaRoja">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-50 resultadoAzul"></div>
+					<div class="col col-50 resultadoRojo"></div>
+				</div>
+				<div class="row">
+					<div class="col col-50 marco">
+						<img src="data/imgs/flechaAzulFinal.png" class="flecha" id="finAzul">
+					</div>
+					<div class="col col-50 marco">
+						<img src="data/imgs/flechaRojaFinal.png" class="flecha" id="finRoja">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col col-100">
+						<div class="fin"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="navegacion">
+			<a class="uiButton" href="#" id="btn-repetir" data-l10n="%repetir"></a>
+			<a class="uiButton" href="#" id="btn-continuar" data-l10n="%continuar"></a>
+		</div>
+	</div>
+
+	<audio id="tiratira">
+		<source src="data/audios/tiratira.mp3" type="audio/mpeg">
+		<source src="data/audios/tiratira.wav" type="audio/wav">
+	</audio>
+
+
+</body>
+
+
+
+</html>

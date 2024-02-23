@@ -1,0 +1,41 @@
+.ig-keypad {
+	text-align: center;
+}
+
+.ig-keypad-key {
+	min-width: 45px;
+	display: inline-block;
+}
+
+.ig-keypad-key a{
+	background: #fff;
+	vertical-align: top;
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	margin: 3px auto;
+	border: none;
+	border: solid 1px #bababa;
+	font-family: 'SourceSansProBold';
+	font-size: 22px;
+	color: #7a7a7a;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.ig-keypad-key a:disabled {
+	color: #bfbfbf;
+}
+.ig-keypad-key a.disabled:hover{
+	background: #fff;
+	color:#bfbfbf;
+	cursor: not-allowed;
+}
+
+.ig-keypad-key a:hover {
+	background: #b1a9d4;
+	color: #fff;
+}
